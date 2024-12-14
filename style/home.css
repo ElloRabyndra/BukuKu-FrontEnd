@@ -1,0 +1,65 @@
+/* ---------------------------------------------------------------------------------------------------------- */
+/* Home */
+
+.home {
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .bukuku-logo-home {
+  width: 300px;
+  height: 300px;
+  background-image: url(../asset/BukuKu-02.png);
+  background-size: cover;
+  transition: 0.5s;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.home h1 {
+  color: white;
+  font-size: 3.5em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.home h1:nth-child(2) {
+  margin-top: -0.4em;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home h1 {
+    font-size: 2.5em;
+  }
+}
+
+

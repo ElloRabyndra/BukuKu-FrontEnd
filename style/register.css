@@ -1,0 +1,86 @@
+/* ---------------------------------------------------------------------------------------------------------- */
+/* Register */
+
+.register-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.register-tittle-container {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.register-tittle-container .bukuku-logo {
+  width: 300px;
+  height: 300px;
+  background-image: url(../asset/BukuKu-02.png);
+  background-size: cover;
+}
+
+.register-tittle-container h1 {
+  text-align: center;
+  width: 380px;
+  font-size: 2.5em;
+  line-height: 1.1em;
+}
+
+.register-tittle-container p {
+  width: 450px;
+  text-align: center;
+  margin: 0.8em;
+  font-size: 1.3em;
+  line-height: 1em;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.register-form input,
+.register-form button {
+  width: 350px;
+  border: none;
+  outline: none;
+  padding: 0.8em;
+  border-radius: 0.8em 1em;
+  font-size: 1em;
+  background-color: #333333;
+  color: white;
+  border: 1px solid #dcdcdc46;
+  transition: 0.3s;
+}
+
+.register-form button {
+  width: 150px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.register-form input:focus-within,
+.register-form button:focus-within,
+.register-form button:active {
+  background-color: #272727;
+}
+
+.auth-alert {
+  width: 350px;
+}
+
+@media only screen and (max-width: 992px) {
+  .register-container {
+    flex-direction: column;
+  }
+}

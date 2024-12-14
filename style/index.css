@@ -1,0 +1,122 @@
+/* ---------------------------------------------------------------------------------------------------------- */
+/* Index */
+
+.index-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.index-tittle-container {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.index-tittle-container .bukuku-logo {
+  width: 200px;
+  height: 200px;
+  background-image: url(../asset/BukuKu-02.png);
+  background-size: cover;
+}
+
+.index-tittle-container h1 {
+  text-align: center;
+  width: 300px;
+  line-height: 1.1em;
+}
+
+.index-tittle-container p {
+  width: 350px;
+  text-align: center;
+  margin: 0.8em;
+  line-height: 1em;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.login-form input,
+.login-form button {
+  width: 300px;
+  border: none;
+  outline: none;
+  padding: 0.8em;
+  border-radius: 0.8em 1em;
+  font-size: 0.9em;
+  background-color: #333333;
+  color: white;
+  border: 1px solid #dcdcdc46;
+  transition: 0.3s; 
+}
+
+.login-form button {
+  width: 150px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.login-form input:focus-within,
+.login-form button:focus-within,
+.login-form button:active {
+  background-color: #272727;
+
+}
+
+.login-form a {
+  color: white;
+}
+
+.auth-alert {
+  width: 300px;
+}
+
+
+ /* Pop-up */
+ .popup {
+  display: none; 
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  z-index: 1000; 
+}
+
+.popup-content {
+  background-color: #2c2c2c; 
+  color: white; 
+  padding: 1.5em;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #dcdcdc46;
+}
+
+.close-btn {
+  background-color: #ff3c5c; 
+  color: white;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}

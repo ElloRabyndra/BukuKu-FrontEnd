@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BukuKu - Profile</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/profile.css" />
+  </head>
+  <body>
+    <div class="side-bar">
+      <a class="back-button" href="home.html"
+        ><span>&lt;</span> Kembali</a
+      >
+      <a
+        class="side-bar-list side-bar-selected"
+        href=""
+        >Profile</a
+      >
+      <a class="side-bar-list" href="dashboard.html">Dashboard</a>
+      <a class="side-bar-list" href="nowReading.html"
+        >Bacaan</a
+      >
+      <a class="side-bar-list" href="books.html">Buku</a>
+      <a class="side-bar-list" href="categories.html"
+        >Kategori</a
+      >
+      <a class="side-bar-list" href="index.html">Logout</a>
+    </div>
+
+    <div class="user-container">
+      <form
+        class="edit-profile-container"
+        action="profile.html"
+        method="get"
+      >
+        <a class="profile-back-button" href="navbar.html">Kembali</a>
+        <h1>Edit Profile</h1>
+        <div class="edit-profile-header">
+          <div class="user-profile-icon"></div>
+          <h3>ElloRabyndra</h3>
+        </div>
+        <div class="edit-profile-field-container">
+          <div class="edit-profile-field-left">
+            <div class="edit-profile-field">
+              <label for="username">Username</label>
+              <input
+                id="username"
+                name="username"
+                type="text"
+                placeholder="Username"
+                autocomplete="off"
+                required
+                value="ElloRabyndra"
+              />
+            </div>
+            <div class="edit-profile-field">
+              <label for="oldPassword">Password Lama</label>
+              <input
+                id="oldPassword"
+                name="oldPassword"
+                type="password"
+                placeholder="Password Lama"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="edit-profile-field-right">
+            <div class="edit-profile-field">
+              <label for="newPassword">Password Terbaru</label>
+              <input
+                id="newPassword"
+                name="newPassword"
+                type="password"
+                placeholder="Password Terbaru"
+                autocomplete="off"
+              />
+            </div>
+            <div class="edit-profile-field">
+              <label for="passwordConfirm">Konfirmasi Password</label>
+              <input
+                id="passwordConfirm"
+                name="passwordConfirm"
+                type="password"
+                placeholder="Konfirmasi Password"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="edit-profile-field-container">
+          <div class="edit-profile-field-left">
+            <button class="edit-profile-submit" type="submit">Update</button>
+          </div>
+          <div class="edit-profile-field-right"></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

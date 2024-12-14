@@ -1,0 +1,174 @@
+/* ---------------------------------------------------------------------------------------------------------- */
+/* Bacaan */
+
+/* List Bacaan */
+.bacaan {
+  padding: 4em;
+  padding-top: 7em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #3a3b3d;
+}
+
+/* Update Status Bacaan */
+.update-status {
+  padding: 4em;
+  padding-top: 7em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #3a3b3d;
+}
+
+.update-bacaan-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  background-color: rgb(241, 241, 241);
+  background-color: #2c2c2c;
+  color: white;
+  border-radius: 1.5em;
+  min-height: 500px;
+  border: 1px solid #dcdcdc46;
+}
+
+.update-bacaan-container .book-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 0 4em;
+}
+
+.update-bacaan-container .book-content .book-tittle {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.withCover {
+  background-size: cover;
+}
+
+.update-bacaan-container .update-content-form {
+  padding: 3em;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8em;
+}
+
+.update-bacaan-container .update-content-form label {
+  padding-left: 0.2em;
+  font-weight: 500;
+}
+
+.update-content-form .status-container select,
+.update-content-form .date-container .start-date input,
+.update-content-form .date-container .end-date input {
+  padding: 0.2em 0.4em;
+  border-radius: 0.8em;
+  font-size: 0.9em;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.438);
+  background-color: #333333;
+  color: inherit;
+}
+
+.update-content-form
+  .date-container
+  .start-date
+  input::-webkit-calendar-picker-indicator,
+.update-content-form
+  .date-container
+  .end-date
+  input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.update-content-form .status-container select option {
+  font-size: 0.9em;
+}
+
+.update-content-form .date-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.update-content-form .date-container .start-date,
+.update-content-form .date-container .end-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-content-form .notes-container,
+.update-content-form .status-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-content-form .notes-container textarea {
+  resize: none;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  font-size: 1.03em;
+  height: 200px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.438);
+  background-color: #333333;
+  color: inherit;
+}
+
+.update-content-form button {
+  padding: 0.6em;
+  border-radius: 1em;
+  background-color: rgb(235, 235, 235);
+  background-color: #333333;
+  color: inherit;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.438);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.update-content-form .status-container select,
+.update-content-form .notes-container textarea,
+.update-content-form button,
+.update-content-form .date-container .start-date input,
+.update-content-form .date-container .end-date input {
+  border: none;
+  outline: none;
+}
+.update-content-form button:active {
+  background-color: rgb(212, 212, 212);
+}
+
+@media only screen and (max-width: 992px) {
+  .table-row .table-column:nth-child(2) {
+    display: none;
+  }
+
+  .table {
+    width: 350px;
+  }
+
+  .table-main .table-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .update-status {
+    padding: 4em 0 0;
+  }
+
+  .update-bacaan-container {
+    padding: 1.5em;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+  }
+}

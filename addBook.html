@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BukuKu - Add Buku</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/books.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="home.html" class="bukuku-font"></a>
+        <ul>
+          <li><a href="nowReading.html">Bacaan</a></li>
+          <li><a href="books.html">Buku</a></li>
+          <li><a href="categories.html">Kategori</a></li>
+        </ul>
+      </div>
+      <a class="user-profile-icon desktop" href="profile.html"></a>
+      <a class="user-profile-icon mobile" href="navbar.html"></a>
+    </nav>
+    <div class="add-book">
+      <div class="add-book-container">
+        <div class="add-book-header">Tambah Buku</div>
+        <form class="add-book-main" action="books.html" method="get" encType="multipart/form-data">
+          <div class="add-cover-container">
+            <div class="book-content">
+              <label class="book-cover" for="input-cover">
+                <div class="bukuku-logo"></div>
+              </label>
+              <input id="input-cover" name="cover" type="file" accept="image/*" />
+              <div class="book-tittle">Cover Buku</div>
+            </div>
+          </div>
+          <div class="add-book-data">
+            <div class="add-book-data-container">
+              <label for="tittle">Judul:</label><input required name="tittle" id="tittle" type="text" autocomplete="off" />
+            </div>
+            <div class="add-book-data-container">
+              <label for="author">Penulis:</label><input required name="author" id="author" type="text" autocomplete="off" />
+            </div>
+            <div class="add-book-data-container">
+              <label for="publisher">Penerbit:</label><input required id="publisher" name="publisher" type="text" autocomplete="off" />
+            </div>
+            <div class="add-book-data-container">
+              <label for="categories">Kategori:</label>
+              <select name="categories" id="categories">
+                <option value="None">None</option>
+                <option value="">Kategori 1</option>
+                <option value="">Kategori 2</option>
+                <option value="">Kategori 3</option>
+              </select>
+            </div>
+            <button type="submit">Tambah</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

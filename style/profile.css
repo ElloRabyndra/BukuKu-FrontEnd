@@ -1,0 +1,146 @@
+body {
+  display: flex;
+}
+.user-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.edit-profile-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  background-color: #2c2c2c;
+  border-radius: 1.5em;
+  border: 1px solid #dcdcdc46;
+  color: white;
+}
+
+.profile-back-button {
+  display: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  width: max-content;
+  border-bottom: 1px solid #dcdcdc50;
+}
+
+h3 {
+  color: inherit;
+  font-weight: 500;
+}
+
+.edit-profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #272727;
+  border: 1px solid #dcdcdc5f;
+}
+
+.edit-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.edit-profile-field-container {
+  display: flex;
+  align-items: center;
+  gap: 2.5em;
+}
+
+.edit-profile-field {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.4em;
+  margin: 1em auto;
+  color: white;
+}
+
+.edit-profile-field label {
+  color: rgb(205, 205, 205);
+}
+
+.edit-profile-field input {
+  width: 300px;
+  border: none;
+  outline: none;
+  padding: 0.8em;
+  border-radius: 0.8em;
+  font-size: 0.9em;
+  background-color: #333333;
+  color: inherit;
+  border: 1px solid #dcdcdc46;
+}
+
+.edit-profile-submit {
+  width: 300px;
+  padding: 0.8em;
+  border-radius: 0.8em;
+  font-size: 0.9em;
+  background-color: #333333;
+  color: inherit;
+  border: 1px solid #dcdcdc46;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-profile-submit:active {
+  background-color: #1e1e1e;
+}
+
+.alert-profile {
+  width: max-content;
+  width: 300px;
+  text-align: center;
+  padding: 0.2em 0.8em;
+  border-radius: 0.8em;
+  background-color: rgba(255, 79, 79, 0.5);
+  border: 1px solid #dcdcdc46;
+  padding: 0.5em;
+}
+
+.alert-profile.succes {
+  background-color: rgb(0, 171, 114, 0.5);
+  border: 1px solid #dcdcdc46;
+}
+
+@media only screen and (max-width: 992px) {
+  .profile-back-button {
+    display: inherit;
+  }
+
+  .side-bar {
+    display: none;
+  }
+
+  .edit-profile-field-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .edit-profile-field input {
+    width: 250px;
+  }
+
+  .edit-profile-submit {
+    width: 250px;
+  }
+
+  .alert-profile {
+    width: 250px;
+    margin: 1em;
+  }
+}

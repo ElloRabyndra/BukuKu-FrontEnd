@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BukuKu - Update Status</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/nowReading.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="home.html" class="bukuku-font"></a>
+        <ul>
+          <li><a href="nowReading.html">Bacaan</a></li>
+          <li><a href="books.html">Buku</a></li>
+          <li><a href="categories.html">Kategori</a></li>
+        </ul>
+      </div>
+      <a class="user-profile-icon desktop" href="profile.html"></a>
+      <a class="user-profile-icon mobile" href="navbar.html"></a>
+    </nav>
+    <div class="update-status">
+      <div class="update-bacaan-container">
+          <!-- Tidak Ada Cover -->
+          <div class="book-content">
+            <div class="book-cover">
+              <div class="bukuku-logo"></div>
+            </div>
+            <div class="book-tittle">Judul Buku</div>
+          </div>
+
+
+        <form class="update-content-form" action="nowReading.html" method="get">
+          <div class="status-container">
+            <label for="status">Status: </label>
+            <select name="status" id="status">
+              <option selected value="Belum Dibaca">Belum Dibaca</option>
+              <option value="Sedang Dibaca">Sedang Dibaca</option>
+              <option value="Selesai Dibaca">Selesai Dibaca</option>
+            </select>
+          </div>
+          <div class="date-container">
+            <div class="start-date">
+              <label for="startDate">Tanggal Mulai: </label><input id="startDate" name="startDate" type="date" value="2024-01-01">
+            </div>
+            <div class="end-date">
+              <label for="endDate">Tanggal Selesai: </label><input id="endDate" name="endDate" type="date">
+            </div>
+          </div>
+          <div class="notes-container">
+            <label for="notes">Notes:</label>
+            <textarea name="notes" id="notes" placeholder="Masukkan Catatanmu"></textarea>
+          </div>
+          <button type="submit">Update</button>
+        </form>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BukuKu - Login</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/index.css">
+  </head>
+  <body>
+    <div class="index-container">
+      <div class="index-tittle-container">
+        <div class="bukuku-logo"></div>
+        <h1>Login Untuk Lacak Bacaanmu!</h1>
+        <p>Temukan kembali buku-buku dan catatan bacaanmu bersama Bukuku.</p>
+      </div>
+      <form class="login-form" action="home.html" method="get">
+        <input type="text" name="username" placeholder="Username" autocomplete="off" >
+        <input type="password" name="password" placeholder="Password" >
+        <button type="submit">Masuk</button>
+
+        <a href="register.html">Buat Akun Baru</a>
+      </form>
+    </div>
+
+    <!-- Pop-up -->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <h3>Selamat Datang</h3>
+        <p>Ini adalah website Front-End dari project BukuKu tanpa Back-End</p>
+        <P>Full Version nya akan segera dideploy</P>
+        <button class="close-btn" onclick="closePopup()">Tutup</button>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
