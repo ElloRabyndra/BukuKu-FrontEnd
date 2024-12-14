@@ -166,7 +166,9 @@
   }
 
   .update-bacaan-container {
-    padding: 1.5em;
+    width: auto;
+    border-radius: 0;
+    padding: 1em;
     flex-direction: column;
     align-items: center;
     justify-self: center;
