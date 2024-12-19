@@ -109,6 +109,10 @@
   border: 1px solid #dcdcdc46;
 }
 
+.popup-content a {
+  color: white;
+}
+
 .close-btn {
   background-color: #ff3c5c; 
   color: white;
